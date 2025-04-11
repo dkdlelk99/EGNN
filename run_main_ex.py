@@ -42,7 +42,7 @@ def eval(model, val_dl, val_dataset, loss_func, val_eval):
 
 dataset_name = 'bace'
 
-bace = MoleculeNet(root='./egnn/data', name=dataset_name)
+bace = MoleculeNet(root='./data', name=dataset_name)
 print("Load dataset...")
 dataset = GraphDataset(bace, dataset_name, add_H=False)
 print("Done loading dataset!")
